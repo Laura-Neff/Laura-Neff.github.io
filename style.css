@@ -1,0 +1,89 @@
+
+#diamond .me {
+    width:40%;
+    border-radius:70%;
+    float:left;
+    margin:4%;
+    margin-top:0%;
+    max-width:250px;
+
+}
+
+#diamond{
+  
+width:600px;
+height:600px;
+
+border-radius:28px;
+
+  background: slategray;
+  transform: rotate(45deg);
+  position: relative;
+  margin: auto;
+  margin-top: 40px;
+  overflow: hidden;
+}
+
+#diamond-content{
+    position: absolute;
+    color: #fff;
+    transform: rotate(-45deg);
+    text-align: center;
+    width: 90%;
+    height: 80%;
+    padding:10%;
+    overflow: hidden;
+  
+  }
+
+
+  @media (min-width: 259px) and (max-width: 375px) {
+    #diamond{
+  
+        width:275px;
+        height:275px;
+        
+        border-radius:28px;
+        
+          background: slategray;
+          transform: rotate(45deg);
+          position: relative;
+          margin: auto;
+          margin-top: 40px;
+          overflow: hidden;
+          right:70px;
+        }
+
+        #diamond-content{
+            position: relative;
+            color: #fff;
+            transform: rotate(-45deg);
+            text-align: center;
+            min-width: 20%;
+            overflow: hidden;
+          
+          }
+
+    }
+
+
+.navbar {
+    margin-bottom: 2%;
+    width:100%;
+}
+
+
+
+ #bigContainer {
+     min-width: 20%;
+     margin:30%;
+
+
+
+    
+
+ }
+
+
+
+
