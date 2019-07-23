@@ -39,31 +39,44 @@ border-radius:28px;
 
   @media (min-width: 259px) and (max-width: 375px) {
     #diamond{
-  
-        width:275px;
-        height:275px;
-        
-        border-radius:28px;
-        
-          background: slategray;
-          transform: rotate(45deg);
-          position: relative;
-          margin: auto;
-          margin-top: 40px;
-          overflow: hidden;
-          right:70px;
+
+        width:330px;
+        height:330px;
+        right:70px;
         }
 
         #diamond-content{
-            position: relative;
+            position: absolute;
             color: #fff;
             transform: rotate(-45deg);
             text-align: center;
-            min-width: 20%;
+            bottom:20px;
+            width:100%;
             overflow: hidden;
+            font-size: 12px;
           
           }
 
+          #diamond .me {
+            width:40%;
+            border-radius:70%;
+            margin:2%;
+            margin-top:0%;
+            max-width:250px;
+            position:relative;
+            right:20px;
+        
+        }
+
+        #diamond-content #textContainer {
+            width:100%;
+            /* position:relative; */
+            margin:2%;
+            padding:2%;
+            
+    
+        }
+        
     }
 
 
