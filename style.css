@@ -29,53 +29,51 @@ border-radius:28px;
     color: #fff;
     transform: rotate(-45deg);
     text-align: center;
-    width: 90%;
-    height: 80%;
-    padding:10%;
+    /* width: 90%;
+    height: 80%; */
+    padding:3%;
     overflow: hidden;
+    top:20%;
+    right:15%;
+    
   
   }
 
 
-  @media (min-width: 259px) and (max-width: 375px) {
+  @media (min-width: 259px) and (max-width: 414px) {
+    #bigContainer {
+        width:300px;
+        height:300px;
+    }
+
     #diamond{
 
-        width:330px;
-        height:330px;
-        right:70px;
+        width:280px;
+        height:280px;
+        right:80px;
+
+        
         }
 
         #diamond-content{
-            position: absolute;
-            color: #fff;
-            transform: rotate(-45deg);
-            text-align: center;
-            bottom:20px;
-            width:100%;
-            overflow: hidden;
-            font-size: 12px;
+            left:5%;
+            top:2%;
+            font-size: 11px;
+            padding:0%;
+            margin:0%;
           
           }
 
           #diamond .me {
-            width:40%;
-            border-radius:70%;
-            margin:2%;
-            margin-top:0%;
-            max-width:250px;
-            position:relative;
-            right:20px;
-        
+            width:50%;
+            margin-top:18%;
         }
 
-        #diamond-content #textContainer {
-            width:100%;
-            /* position:relative; */
-            margin:2%;
-            padding:2%;
+        #diamond #textContainer {
+            margin:9%;
             
-    
         }
+
         
     }
 
