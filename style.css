@@ -4,7 +4,7 @@ body {
   }
 
 #diamond .me {
-    width:40%;
+    width:50%;
     border-radius:70%;
     float:left;
     margin:4%;
@@ -23,11 +23,16 @@ border-radius:40px;
   background: slategray;
   transform: rotate(45deg);
   position: relative;
-  margin: auto;
+  margin:0 auto;
   margin-top: 40px;
   overflow: hidden;
   
+  
 }
+
+
+
+
 
 #diamond-content{
     position: absolute;
@@ -36,16 +41,43 @@ border-radius:40px;
     text-align: center;
     /* width: 90%;
     height: 80%; */
-    padding:3%;
+    padding:2%;
     overflow: hidden;
     top:20%;
     right:15%;
-    
   
   }
 
 
+  
 
+  .flip-card-inner {
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateX(180deg);
+    content:"";
+  }
+ 
+  .flip-card-front, .flip-card-back {
+    backface-visibility: hidden;
+  }
+  
+  
+  .flip-card-back {
+    transform: rotateX(180deg);
+    backface-visibility: hidden;
+    color:white;
+  }
+
+  .flip-card-front {
+    backface-visibility: hidden;
+
+  }
 
 
   @media (min-width: 259px) and (max-width: 414px) {
@@ -60,13 +92,14 @@ border-radius:40px;
         height:280px;
         right:80px;
         top:80px;
-        /* border-color:lightcyan;
-        border-style: solid; */
-        
+/*          border-color:lightcyan;
+        border-style: solid;
+         */
         
 
         
         }
+
 
         #diamond-content{
             left:5%;
@@ -111,7 +144,9 @@ left:20%;
 background: var(--main-color);
   /* font-family: "dancing script", cursive; */
   color: rgb( 121, 125, 127 );
-  letter-spacing: .5px;
+  /* letter-spacing: .5px;
+   */
 
 
 }
+
