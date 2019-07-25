@@ -35,15 +35,22 @@ transform: rotate(135deg);
 transition: .5s all;
 }
 
+/* .diamond-content:before {
+  transform: rotate(-135deg);
+  transition: .5s all;
+ 
+  }
+
 .diamond-content:hover {
   transform: rotate(-135deg);
   transition: .5s all;
   
-  }
+  } */
 
-  .diamond-content:after {
-    /* content: 'whatever it is you want to add'; */
-  }
+  /* .diamond-contentp:after {
+    display: none;
+    content: 'whatever it is you want to add';
+  } */
 
 .diamond-content{
     position: absolute;
