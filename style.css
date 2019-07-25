@@ -30,7 +30,20 @@ body {
   
 }
 
+.diamond:hover {
+transform: rotate(135deg);
+transition: .5s all;
+}
 
+.diamond-content:hover {
+  transform: rotate(-135deg);
+  transition: .5s all;
+  
+  }
+
+  .diamond-content:after {
+    /* content: 'whatever it is you want to add'; */
+  }
 
 .diamond-content{
     position: absolute;
@@ -51,7 +64,7 @@ body {
 
   
 
-  .flip-card-inner {
+  /* .flip-card-inner {
     transition: transform 0.8s;
     transform-style: preserve-3d;
     backface-visibility: hidden;
@@ -69,19 +82,19 @@ body {
     backface-visibility: hidden;
   }
   
-  
-  .flip-card-back {
+   */
+  /* .flip-card-back { */
     /* transform: rotateX(180deg);
     backface-visibility: hidden; */
-    color:white;
+    /* color:white;
     position:relative;
-  }
+  } */
 
 
 
-  .flip-card-front {
+  /* .flip-card-front {
     backface-visibility: hidden;
-  }
+  } */
 
 
   @media (min-width: 259px) and (max-width: 414px) {
