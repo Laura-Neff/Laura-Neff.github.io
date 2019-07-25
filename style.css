@@ -33,7 +33,6 @@ body {
 
 
 
-
 .diamond-content{
     position: absolute;
     color: #fff;
@@ -61,11 +60,11 @@ body {
   }
   
   
-  
   .flip-card:hover .flip-card-inner {
     transform: rotateX(180deg);
     
   }
+
  
   .flip-card-front, .flip-card-back {
     backface-visibility: hidden;
@@ -73,8 +72,8 @@ body {
   
   
   .flip-card-back {
-    transform: rotateX(180deg);
-    backface-visibility: hidden;
+    /* transform: rotateX(180deg);
+    backface-visibility: hidden; */
     color:white;
     position:relative;
   }
@@ -139,8 +138,12 @@ body {
 
 
  #bigContainer {
-     min-width: 20%;
-     margin:30%;
+     /* min-width: 20%; */
+     text-align:center;
+     display:inline-block;
+     padding:30%;
+     margin:0 auto;
+
  }
 
 .card {
