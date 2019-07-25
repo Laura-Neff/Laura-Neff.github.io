@@ -58,7 +58,7 @@
         
         <div class="diamond">
         <div class="diamond-content">
-              <div class="col">
+              <div class="col" id="mainImgDiv">
                   <img class="me" src="images/My Picture.jpg">
               </div>
 
@@ -262,9 +262,11 @@ $(".diamond-content").hover(
       // $(this).css({'transition': '.4s all'});
     $(`#diamondText`).html("I believe that a big impasse in the technological world is the confusion people have over new algorithms and inventions. This can result in legal issues with patents and copyright as well as the discouragement of people entering STEM fields. I am committed to changing this through writing about technology for the Her Campus chapter of Emory University.");
     $(".diamond").css({'transform' : 'rotate('+ 135 +'deg)'});
-
+    $(this).find( "img:last" ).remove();
   }, function() {
-    
+
+    // $(this).find( "img:last" ).remove();
+    $(`<img class="me" src="images/My Picture.jpg">`).appendTo("#mainImgDiv");
     $(this).css({'transform' : 'rotate('+ 315 +'deg)'});
     // $(this).css({'transition': '.4s all'});
     $(`#diamondText`).html("Full-stack developer with a solid foundation in JavaScript, Node.js, React.js, R, CSS, and creating databases in MySQL and Firebase. I have expertise in Java from creating programs for students struggling in math and CS as I worked in the Emory Math and Computer Science Center.")
