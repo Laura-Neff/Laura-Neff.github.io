@@ -146,15 +146,31 @@ body {
  }
 
 .card {
-margin: 0 auto;
-position:relative;
-left:20%;
+margin: 10%;
+/* text-align:center;
+display:inline-block; */
+
 background: var(--main-color);
   /* font-family: "dancing script", cursive; */
   color: rgb( 121, 125, 127 );
   /* letter-spacing: .5px;
    */
 
+
+}
+
+/* .card a {
+  display: inline;
+  padding:2%;
+  width:14%;
+} */
+
+#cardContainer {
+  position:absolute;
+  left:30%;
+  margin:0 auto;
+  text-align:center;
+  /* display:inline-block; */
 
 }
 

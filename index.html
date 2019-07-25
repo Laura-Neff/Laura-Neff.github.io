@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -112,6 +113,92 @@
   </div>
 </div> -->
 
+
+<div class="container" id="cardContainer">
+
+
+    <div class="row">
+        <div class="col">
+      <div data-aos="fade-up">
+      <div class="card" id= "quote" style="width: 50%;">
+        <div class="card-body" id="languages">
+          <h5 class="card-text">Knowedge in several languages and technologies</h5>
+          <!-- <p class="card-text">Java | Javascript | Node.js | React.js | Express | MySQL | JQuery | CSS3 |  | R | Python | Firebase | MongoDB | Handelbars.js | HTML5 | Git | Heroku | Chai.js | Mocha.js | Moment.js | Bootstrap | Sequelize</p> -->
+          <!-- maybe use javascript to make these into buttons -->
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+
+    <!-- Java | Javascript | Node.js | React.js | Express | MySQL | JQuery | CSS3 |  | R | Python | Firebase | MongoDB | Handelbars.js | HTML5 | Git | Heroku | Chai.js | Mocha.js | Moment.js | Bootstrap | Sequelize  -->
+
+<div class="row">
+  <div class="col">
+<div data-aos="fade-up">
+<div class="card" id= "quote" style="width: 50%;">
+  <div class="card-body">
+    <p class="card-text">Inventor with 3 patents</p>
+    <a href="https://patents.google.com/patent/US20160371991A1/en?q=laura&inventor=neff&assignee=Laura+J.+Neff" target="_blank" class="btn btn-primary">See my patent involving CS on healthcare</a>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="row">
+  <div class="col">
+<div data-aos="fade-up">
+<div class="card" id= "quote" style="width: 50%;">
+  <div class="card-body">
+    <p class="card-text">Published author with several articles on AI and data protection.</p>
+    <a href="https://www.hercampus.com/school/oxford-emory/artificial-intelligence-potentially-our-most-valuable-medicine" target="_blank" class="btn btn-primary">Read my article on AI's effect on medicine</a>
+    <a href="https://emorywheel.com/in-honor-of-opportunity-increase-nasa-budget/" target="_blank" class="btn btn-primary">Read my NASA article on the Emory Wheel</a>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col">
+<div data-aos="fade-up">
+<div class="card" id= "quote" style="width: 50%;">
+  <div class="card-body">
+    <p class="card-text">Certified in Full Stack development from Columbia University and business from Goizueta Business School</p>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col">
+<div data-aos="fade-up">
+<div class="card" id= "quote" style="width: 50%;">
+  <div class="card-body">
+    <p class="card-text">Volunteer math tutor for several schools</p>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col">
+<div data-aos="fade-up">
+<div class="card" id= "quote" style="width: 50%;">
+  <div class="card-body">
+    <p class="card-text">Speaker of 3 languages</p>
+    <p>French (fluent), Spanish (working), English (native)</p>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
 <div class="row">
         <div class="col">
 <div data-aos="fade-up">
@@ -125,7 +212,7 @@
 </div>
 </div>
 
-
+</div>
 
     <div class="row">
             <div class="col">
@@ -155,6 +242,18 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+
+
+    var codingLanguages = ["Java", "Javascript", "Node.js", "React.js", "Express", "MySQL", "JQuery", "CSS3", "R", "Python", "Firebase", "MongoDB", "Handelbars.js", "HTML5", "Git", "Heroku", "Chai.js", "Mocha.js", "Moment.js", "Bootstrap", "Sequelize"];
+
+
+
+for(var i = 0; i < codingLanguages.length; i++){
+
+    var buttonBaby = $("<button data-topic=" + codingLanguages[i] + ">" + codingLanguages[i] + "</button>");
+    buttonBaby.appendTo("#languages");
+
+}
   </script>
 
 </body>
