@@ -55,6 +55,7 @@
 <div class="flip-card-inner">
 
       <div class="flip-card-front">
+        
         <div class="diamond">
         <div class="diamond-content">
               <div class="col">
@@ -199,7 +200,7 @@
 </div>
 
 
-<div class="row">
+<!-- <div class="row">
         <div class="col">
 <div data-aos="fade-up">
 <div class="card" id= "quote" style="width: 50%;">
@@ -212,7 +213,7 @@
 </div>
 </div>
 
-</div>
+</div> -->
 
     <div class="row">
             <div class="col">
@@ -254,50 +255,22 @@ for(var i = 0; i < codingLanguages.length; i++){
     buttonBaby.appendTo("#languages");
 
 }
+
 $(".diamond-content").hover(
   function() {
       $(this).css({'transform' : 'rotate('+ 225 +'deg)'});
-    $(`#diamondText`).html("Hello darkness my old friend");
+      // $(this).css({'transition': '.4s all'});
+    $(`#diamondText`).html("I believe that a big impasse in the technological world is the confusion people have over new algorithms and inventions. This can result in legal issues with patents and copyright as well as the discouragement of people entering STEM fields. I am committed to changing this through writing about technology for the Her Campus chapter of Emory University.");
+    $(".diamond").css({'transform' : 'rotate('+ 135 +'deg)'});
 
   }, function() {
     
     $(this).css({'transform' : 'rotate('+ 315 +'deg)'});
+    // $(this).css({'transition': '.4s all'});
     $(`#diamondText`).html("Full-stack developer with a solid foundation in JavaScript, Node.js, React.js, R, CSS, and creating databases in MySQL and Firebase. I have expertise in Java from creating programs for students struggling in math and CS as I worked in the Emory Math and Computer Science Center.")
-
+    $(".diamond").css({'transform' : 'rotate('+ -315 +'deg)'});
   }
 );
-
-// $(".diamond").hover(
-//   function() {
-//     $(`.diamond`).css({'transform' : 'rotate('+ -135 +'deg)'});
-//     $(`#diamondText`).html("Hello darkness my old friend");
-//     $(`#diamondText`).css({'transform' : 'rotate('+ 90 +'deg)'});
-
-//   }, function() {
-    
-//     $(".diamond").css({'transform' : 'rotate('+ 135 +'deg)'});
-//     $(`#diamondText`).html("Full-stack developer with a solid foundation in JavaScript, Node.js, React.js, R, CSS, and creating databases in MySQL and Firebase. I have expertise in Java from creating programs for students struggling in math and CS as I worked in the Emory Math and Computer Science Center.")
-//     $(`#diamondText`).css({'transform' : 'rotate('+ -90 +'deg)'});
-// }
-
-
-// );
-
-// $(".diamond").hover(
-//   function() {
-//     $(`#diamondText`).html("Hello darkness my old friend");
-//     $(`#diamondContent`).css({'transform' : 'rotate('+ -135 +'deg)'});
-
-//   }, function() {
-    
-//     // $(".diamond").css({'transform' : 'rotate('+ 135 +'deg)'});
-//     $(`#diamondText`).html("Full-stack developer with a solid foundation in JavaScript, Node.js, React.js, R, CSS, and creating databases in MySQL and Firebase. I have expertise in Java from creating programs for students struggling in math and CS as I worked in the Emory Math and Computer Science Center.")
-//     $(`#diamondContent`).css({'transform' : 'rotate('+ -135 +'deg)'});
-// }
-
-
-// );
-
 
   </script>
 
