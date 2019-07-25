@@ -3,7 +3,7 @@ body {
       background-image: url("images/dark-paths.png");
   }
 
-#diamond .me {
+.diamond .me {
     width:50%;
     border-radius:70%;
     float:left;
@@ -13,18 +13,18 @@ body {
 
 }
 
-#diamond{
+.diamond{
   
-width:550px;
-height:550px;
+  width:550px;
+  height:550px;
 
-border-radius:40px;
+  border-radius:40px;
 
   background: slategray;
   transform: rotate(45deg);
   position: relative;
   margin:0 auto;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   overflow: hidden;
   
   
@@ -34,7 +34,7 @@ border-radius:40px;
 
 
 
-#diamond-content{
+.diamond-content{
     position: absolute;
     color: #fff;
     transform: rotate(-45deg);
@@ -43,9 +43,11 @@ border-radius:40px;
     height: 80%; */
     padding:2%;
     overflow: hidden;
-    top:20%;
-    right:15%;
-  
+    top: 15%;
+    right: 8%;
+    width: 90%;
+    height: 80%;
+    backface-visibility: hidden;
   }
 
 
@@ -54,13 +56,15 @@ border-radius:40px;
   .flip-card-inner {
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    backface-visibility: hidden;
+    
   }
   
   
   
   .flip-card:hover .flip-card-inner {
     transform: rotateX(180deg);
-    content:"";
+    
   }
  
   .flip-card-front, .flip-card-back {
@@ -72,11 +76,13 @@ border-radius:40px;
     transform: rotateX(180deg);
     backface-visibility: hidden;
     color:white;
+    position:relative;
   }
+
+
 
   .flip-card-front {
     backface-visibility: hidden;
-
   }
 
 
