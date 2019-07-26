@@ -107,6 +107,7 @@ transition: .5s all;
   text-align: center;
   font-size:120px;
   font-family: 'IBM Plex Mono', monospace;
+  text-shadow: 10px 10px black;
   
 }
 
@@ -123,6 +124,7 @@ transition: .5s all;
   text-align: center;
   font-size:50px;
   font-family: 'IBM Plex Mono', monospace;
+  text-shadow: 5px 5px black;
 }
 
 #githubButton {
@@ -140,6 +142,7 @@ transition: .5s all;
   font-size:30px;
   background-color:orangered;
   font-family: 'IBM Plex Mono', monospace;
+  box-shadow: 10px 10px 5px black;
 }
 
 ul {
