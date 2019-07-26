@@ -15,12 +15,15 @@
     <div class="row">
         <div class="col">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
-                        <div class="container">
-                            <div class="navbar-brand"  style="max-width: 40%;">
+                        <div class="container" style="max-width: 30%;">
+                            <div data-aos="zoom-in-up">
+                            <div class="navbar-brand">
                                 <!-- <h3 style="width:30%;display:inline-block;">Laura Neff</h3> -->
                                 <!-- <img src="images/logo2.png" class="img-fluid"> -->
-                                <span>Laura Neff</span><img src="images/logo2.png" style="width:30%;display:inline-block;">
+                                <img src="images/logo2.png" style="width:100%;" id= "logo">
+                                <h5>Laura Neff<h5>
                                 </div>
+                              </div>
                                 <a class="navbar-brand js-scroll-trigger" href="#page-top"><i class="fas fa-home"></i></a>
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -44,12 +47,20 @@
     </div>
     </div>
 
+    
+    <div class="row">
+      <div class="col">
+    <img src="images/computer.jpg" class="img-fluid" id="headerImage" alt="Responsive image">
+        <h1 id="mainName">Laura Neff</h1>
+        <p id="description">Full Stack Developer</p>
+        <a class="btn btn-danger" id="githubButton" href="https://github.com/Laura-Neff" role="button">See my Github</a>
+    </div>
+</div>
 
  <div class="row">
        <div class="col">
 
 <div class="container" id= "bigContainer">
-
 <div class="flip-card">
 
 <div class="flip-card-inner">
@@ -188,12 +199,12 @@
 
 <div class="row">
   <div class="col">
-<div data-aos="fade-up">
+<!-- <div data-aos="fade-up"> -->
 <div class="card" id= "quote" style="width: 50%;">
   <div class="card-body">
     <p class="card-text">Speaker of 3 languages</p>
     <p>French (fluent), Spanish (working), English (native)</p>
-  </div>
+  <!-- </div> -->
 </div>
 </div>
 </div>
@@ -273,6 +284,8 @@ $(".diamond-content").hover(
     $(".diamond").css({'transform' : 'rotate('+ -315 +'deg)'});
   }
 );
+
+
 
   </script>
 
