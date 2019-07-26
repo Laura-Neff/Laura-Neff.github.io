@@ -75,7 +75,8 @@ transition: .5s all;
 
 .navbar-brand {
   position: relative;
-  right:20em;
+  right:18em;
+  font-family: 'IBM Plex Mono', monospace;
    
     /* margin-bottom: 0;
     vertical-align: middle;
@@ -105,6 +106,7 @@ transition: .5s all;
   right: 0;
   text-align: center;
   font-size:120px;
+  font-family: 'IBM Plex Mono', monospace;
   
 }
 
@@ -120,6 +122,7 @@ transition: .5s all;
   right: 0;
   text-align: center;
   font-size:50px;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 #githubButton {
@@ -136,6 +139,7 @@ transition: .5s all;
   width:30%;
   font-size:30px;
   background-color:orangered;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 ul {
@@ -178,6 +182,10 @@ ul {
 
 
   @media (min-width: 259px) and (max-width: 414px) {
+    /*          border-color:lightcyan;
+        border-style: solid;
+         */
+        
     #bigContainer {
         width:300px;
         height:300px;
@@ -189,10 +197,7 @@ ul {
         height:280px;
         right:80px;
         top:80px;
-/*          border-color:lightcyan;
-        border-style: solid;
-         */
-        
+
 
         
         }
@@ -218,6 +223,7 @@ ul {
             
         }
 
+
         
     }
 
@@ -230,7 +236,6 @@ ul {
 
 
  #bigContainer {
-     /* min-width: 20%; */
      text-align:center;
      display:inline-block;
      padding:30%;
