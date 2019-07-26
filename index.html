@@ -272,16 +272,21 @@ $(".diamond-content").hover(
   function() {
       $(this).css({'transform' : 'rotate('+ 225 +'deg)'});
       // $(this).css({'transition': '.4s all'});
+      $(`#diamondText`).css({'top' : '100px'});
     $(`#diamondText`).html("I believe that a big impasse in the technological world is the confusion people have over new algorithms and inventions. This can result in legal issues with patents and copyright as well as the discouragement of people entering STEM fields. I am committed to changing this through writing about technology for the Her Campus chapter of Emory University.");
+    // $(`#diamondText`).css({'position' : 'relative'});
+    // $(`#diamondText`).css({'top' : '100px'});
     $(".diamond").css({'transform' : 'rotate('+ 135 +'deg)'});
     $(this).find( "img:last" ).remove();
   }, function() {
 
     // $(this).find( "img:last" ).remove();
+    $(`#diamondText`).css({'top' : '50px'});
     $(`<img class="me" src="images/My Picture.jpg">`).appendTo("#mainImgDiv");
     $(this).css({'transform' : 'rotate('+ 315 +'deg)'});
     // $(this).css({'transition': '.4s all'});
     $(`#diamondText`).html("Full-stack developer with a solid foundation in JavaScript, Node.js, React.js, R, CSS, and creating databases in MySQL and Firebase. I have expertise in Java from creating programs for students struggling in math and CS as I worked in the Emory Math and Computer Science Center.")
+    // $(`#diamondText`).css({'bottom' : '30px'});
     $(".diamond").css({'transform' : 'rotate('+ -315 +'deg)'});
   }
 );
