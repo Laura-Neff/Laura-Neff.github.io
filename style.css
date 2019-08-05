@@ -14,6 +14,32 @@ body {
 
 }
 
+.btn {
+  display: inline;
+  width:45%;
+  margin:2%;
+}
+
+#AI {
+  float:left;
+  background-color:slategray;
+  border-color:slategray;
+}
+
+#Nasa {
+  float:right;
+  background-color:slategray;
+  border-color:slategray;
+}
+
+#patent {
+  background-color:slategray;
+  border-color:slategray;
+}
+
+.navbar {
+  max-height:200px;
+}
 .diamond{
   
   width:550px;
@@ -67,6 +93,7 @@ transition: .5s all;
     width: 90%;
     height: 80%;
     backface-visibility: hidden;
+    
   }
 /* 
 .navbar-brand img {
@@ -76,7 +103,9 @@ transition: .5s all;
 
 .navbar-brand {
   position: relative;
-  right:18em;
+  right:16em;
+  transform:scale(.8);
+ 
   font-family: 'IBM Plex Mono', monospace;
    
     /* margin-bottom: 0;
@@ -86,6 +115,7 @@ transition: .5s all;
     transition: all .4s ease-in-out;
     -webkit-transform: translate3d(0,0,0); */
 }
+
 
 #headerImage {
   opacity: 0.7;
@@ -257,7 +287,7 @@ background: var(--main-color);
   color: rgb( 121, 125, 127 );
   /* letter-spacing: .5px;
    */
-
+   /* margin-top: 40px; */
 
 }
 

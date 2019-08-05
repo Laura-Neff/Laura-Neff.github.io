@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <!-- Navbar -->
     <div class="row">
         <div class="col">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
-                        <div class="container" style="max-width: 30%;">
+                        <div class="container" id="navContain" style="max-width: 30%;">
                             <div data-aos="zoom-in-up">
                             <div class="navbar-brand">
                                 <!-- <h3 style="width:30%;display:inline-block;">Laura Neff</h3> -->
@@ -52,6 +53,7 @@
     <div class="row">
       <div class="col">
     <img src="images/computer.jpg" class="img-fluid" id="headerImage" alt="Responsive image">
+    <!-- <!-- <img src="https://media0.giphy.com/media/ko7twHhomhk8E/giphy.gif" class="img-fluid" id="headerImage" alt="Responsive image"> -->
         <h1 id="mainName">Laura Neff</h1>
         <p id="description">Full Stack Developer</p>
         <a class="btn btn-danger" target="_blank" id="githubButton" href="https://github.com/Laura-Neff" role="button">See my Github</a>
@@ -152,7 +154,7 @@
 <div class="card" id= "quote" style="width: 50%;">
   <div class="card-body">
     <p class="card-text">Inventor with 3 patents</p>
-    <a href="https://patents.google.com/patent/US20160371991A1/en?q=laura&inventor=neff&assignee=Laura+J.+Neff" target="_blank" class="btn btn-primary">See my patent involving CS on healthcare</a>
+    <a href="https://patents.google.com/patent/US20160371991A1/en?q=laura&inventor=neff&assignee=Laura+J.+Neff" target="_blank" id="patent" class="btn btn-primary">See my patent involving CS on healthcare</a>
   </div>
 </div>
 </div>
@@ -166,8 +168,12 @@
 <div class="card" id= "quote" style="width: 50%;">
   <div class="card-body">
     <p class="card-text">Published author with several articles on AI and data protection.</p>
-    <a href="https://www.hercampus.com/school/oxford-emory/artificial-intelligence-potentially-our-most-valuable-medicine" target="_blank" class="btn btn-primary">Read my article on AI's effect on medicine</a>
-    <a href="https://emorywheel.com/in-honor-of-opportunity-increase-nasa-budget/" target="_blank" class="btn btn-primary">Read my NASA article on the Emory Wheel</a>
+    <div class="col">
+    <a href="https://www.hercampus.com/school/oxford-emory/artificial-intelligence-potentially-our-most-valuable-medicine" id="AI" target="_blank" class="btn btn-primary">Read my article on AI's effect on medicine</a>
+    </div>
+    <div class="col">
+    <a href="https://emorywheel.com/in-honor-of-opportunity-increase-nasa-budget/" target="_blank" id="Nasa" class="btn btn-primary">Read my NASA article on the Emory Wheel</a>
+  </div>
   </div>
 </div>
 </div>
