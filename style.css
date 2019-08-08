@@ -215,29 +215,13 @@ ul {
   } */
 
 
-  @media (min-width: 259px) and (max-width: 414px) {
+  @media (min-width: 259px) and (max-width: 800px) {
     /*          border-color:lightcyan;
         border-style: solid;
          */
-        
-    #bigContainer {
-        width:300px;
-        height:300px;
-    }
-
-    #diamond{
-
-        width:280px;
-        height:280px;
-        right:80px;
-        top:80px;
 
 
-        
-        }
-
-
-        #diamond-content{
+        /* #diamond-content{
             left:5%;
             top:2%;
             font-size: 11px;
@@ -250,14 +234,58 @@ ul {
           #diamond .me {
             width:50%;
             margin-top:18%;
+        } */
+
+        #diamond {
+          position:absolute;
+          margin: 0 auto;
         }
 
-        #diamond #textContainer {
-            margin:9%;
-            
+        #bigContainer{
+          width:500%;
         }
 
+        #cardContainer {
+          width:400%;
+        }
+        .card {
+          left:20%;
+        }
 
+        #headerImage {
+          min-width:2000px;
+          margin-bottom:20%;
+        
+        }
+
+    
+
+        .navbar-brand {
+          position: relative;
+          bottom:6em;
+          transform:scale(.5);
+        }
+        .navbar-brand h5 {
+          position: relative;
+          text-align: center;
+          font-size:30px;
+        }
+
+        #mainName {
+          font-size:150px;
+          left:130%;
+          width:240%;
+        }
+        #description {
+          font-size:60px;
+          left:100%;
+          width:300%;
+        }
+        #githubButton {
+          font-size:70px;
+          left:150%;
+          width:200%;
+        }
         
     }
 
@@ -303,6 +331,14 @@ background: var(--main-color);
   margin:0 auto;
   text-align:center;
   /* display:inline-block; */
+
+}
+
+footer {
+  position:absolute;
+  right:15em;
+  background-color:white;
+  width:100%;
 
 }
 
