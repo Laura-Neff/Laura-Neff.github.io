@@ -100,7 +100,6 @@ transition: .5s all;
   position: absolute;
 } */
 
-
 .navbar-brand {
   position: relative;
   right:16em;
@@ -258,11 +257,14 @@ ul {
         
         }
 
+        .navbar {
+          max-height:300px;
+        }
     
 
         .navbar-brand {
           position: relative;
-          bottom:6em;
+          bottom:9em;
           transform:scale(.5);
         }
         .navbar-brand h5 {
@@ -286,7 +288,7 @@ ul {
           left:150%;
           width:200%;
         }
-        
+    
     }
 
 
@@ -341,4 +343,5 @@ footer {
   width:100%;
 
 }
+
 
