@@ -26,12 +26,16 @@ ul {
 } */
 
 
-html { 
+body { 
     background:  url("images/contact.gif");
     background-size: cover;
   }
+/*  */
 
 
+.jumbotron {
+    margin:20%;
+}
 
 /* #binary {
     width:1300px;
