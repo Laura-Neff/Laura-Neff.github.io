@@ -34,8 +34,40 @@ body {
 
 
 .jumbotron {
-    margin:20%;
+    margin-top:20%;
+    margin-left:12%;
+    margin-right:12%;
+    display: block;
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    
+
 }
+
+#formContainer {
+    background-color:black;
+    color:deepskyblue;
+}
+
+.jumbotron input {
+    border-color:deepskyblue;
+    border-style: solid;
+    border-width:3px;
+    font-family: Helvetica;
+}
+
+.jumbotron textarea {
+    border-color:deepskyblue;
+    border-style: solid;
+    border-width:3px;
+    font-family: Helvetica;
+}
+
+#email {
+  margin-top:3%;
+
+}
+
 
 /* #binary {
     width:1300px;
