@@ -42,7 +42,7 @@ body {
 }
 
 .navbar img {
-  max-width:100%;
+  max-width:80%;
   
 }
 
@@ -122,13 +122,17 @@ transition: .5s all;
 }
 
 #headerImage {
+  clear:both;
   opacity: 0.7;
   filter: alpha(opacity=70); /* For IE8 and earlier */
   width:100%;
   min-width: 120%;
-  height:100%;
+  /* height:100%; */
 }
 
+/* #headerPic {
+  background-image: url("/images/computer.jpg");
+} */
 
 #mainName {
   color:white;
@@ -183,7 +187,7 @@ transition: .5s all;
 
 ul {
   position: relative;
-  left:20em;
+  left:10em;
 }
 
   
@@ -241,6 +245,7 @@ ul {
             width:50%;
             margin-top:18%;
         } */
+
 
         #diamond {
           position:absolute;
