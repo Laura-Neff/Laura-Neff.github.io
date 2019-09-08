@@ -28,8 +28,10 @@ ul {
     width:32%;
     position:relative;
     left:5%;
-  
     
- 
-    
+}
+
+.last {
+    position:absolute;
+    left:4%;
 }
