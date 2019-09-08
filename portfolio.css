@@ -1,0 +1,21 @@
+.navbar {
+    max-height:200px;
+  }
+
+.navbar img {
+    max-width:80%; 
+  }
+
+.navbar-brand {
+    position: relative;
+    right:16em;
+    transform:scale(.8);
+   
+    font-family: 'IBM Plex Mono', monospace;
+     
+}
+
+ul {
+    position: relative;
+    left:10em;
+}
