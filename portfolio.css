@@ -35,14 +35,6 @@ ul {
     position:absolute;
     left:4%;
 }
-
-.flip-card {
-    background-color: transparent;
-    /* width: 300px;
-    height: 200px; */
-    /* border: 1px solid #f1f1f1; */
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  }
   
   .flip-card {
     background-color: transparent;
@@ -61,7 +53,7 @@ ul {
 .flip-card img {
     height: 100%;
     width: 100%;
-    /* max-height: 200px; */
+    
 }
 
 
@@ -100,15 +92,7 @@ ul {
 
 /* Style the front side (fallback if image is missing) */
 
-.flip-card-front {
-    height: 100%;
-    background-color: #f8f2eb;
-    /* background-color:floralwhite; */
-    /* color: #590808; */
-    /* border: 2% solid #f1f1f1; */
-    /* border-radius: 2%; */
-    /* padding: 2%; */
-}
+
 
 
 /* Style the back side */
@@ -133,3 +117,6 @@ ul {
     font-weight: bold;
     font-style: italic;
 }
+
+
+
