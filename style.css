@@ -265,14 +265,16 @@ ul {
         
 
         .navbar {
-          max-height:300px;
+          /* max-height:300px; */
+          height:20%;
         }
     
 
         .navbar-brand {
           position: relative;
-          bottom:10em;
-          transform:scale(.4);
+          bottom:8em;
+          right:30em;
+          transform:scale(.3);
         }
         .navbar-brand h5 {
           position: relative;
@@ -282,8 +284,9 @@ ul {
 
         #mainName {
           font-size:150px;
-          left:130%;
-          width:240%;
+          right:150%;
+          transform:scale(.5);
+          width:100%;
         }
         #description {
           font-size:60px;
@@ -292,8 +295,9 @@ ul {
         }
         #githubButton {
           font-size:70px;
-          left:150%;
-          width:200%;
+          right:150%;
+          transform:scale(.5);
+          width:100%;
         }
 
         #headerImage {
