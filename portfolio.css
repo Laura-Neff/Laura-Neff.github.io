@@ -176,7 +176,7 @@ ul {
 }
 
 .flip-card-back{
-    overflow: scroll;
+    overflow: hidden;
     height: 100%;
     background-color: dodgerblue;
     color: white;
