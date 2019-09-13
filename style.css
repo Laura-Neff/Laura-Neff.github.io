@@ -1,23 +1,137 @@
-
 body {
       background-image: url("images/dark-paths.png");
      
   }
 
-.diamond .me {
-    width:50%;
-    border-radius:70%;
-    float:left;
-    margin:4%;
-    margin-top:0%;
-    max-width:250px;
+ul {
+    padding:1em;
+}
 
+.navbar {
+  height:10rem;
+  max-height:200px;
+  text-align:right;
+}
+
+.container-nav{
+  width:1280px;
+  max-width:100%;
+  margin:0 auto;
+}
+
+.navbar-brand{
+  text-align:center;
+}
+
+.navbar-brand img{
+  max-height:7rem;
+  width:auto;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-image: url("images/computer.jpg");
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.center-everything{
+    position: relative;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.hero .hero-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+}
+
+.diamond-container{
+  position:relative; 
+  top:10vh;
+  padding-bottom:20vh;
+}
+
+.hero .title {
+    font-size:5rem;
+    font-family: 'IBM Plex Mono', monospace;
+    text-shadow: 7px 7px black;
+    
+    color: #FFFFFF;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.hero .subtitle {
+    font-size:3rem;
+    font-family: 'IBM Plex Mono', monospace;
+    text-shadow: 7px 7px black;
+    
+    color: #FFFFFF;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.githubButton {
+  color:white !important;
+  text-align: center;
+  min-width:200px;
+  width:25% !important;
+  font-size:30px !important;
+  background-color:orangered !important;
+  font-family: 'IBM Plex Mono', monospace;
+  box-shadow: 10px 10px 5px black;
 }
 
 .btn {
   display: inline;
-  width:45%;
-  margin:2%;
+  overflow-wrap: break-word !important;
+}
+
+.btn-rounded {
+  border-radius: 30px !important;
 }
 
 #AI {
@@ -37,19 +151,14 @@ body {
   border-color:slategray;
 }
 
-.navbar {
-  max-height:200px;
-}
 
-.navbar img {
-  max-width:80%;
-  
-}
 
 .diamond{
-  
+
   width:550px;
   height:550px;
+  max-width:100%;
+  max-height:100%;
 
   border-radius:40px;
 
@@ -59,8 +168,18 @@ body {
   margin:0 auto;
   /* margin-top: 40px; */
   overflow: hidden;
+  font-size:1.3rem;
   
   
+}
+
+.diamond .me {
+    width:40%;
+    border-radius:70%;
+    float:left;
+    margin:4%;
+    margin-top:0%;
+    max-width:250px;
 }
 
 .diamond:hover {
@@ -92,7 +211,7 @@ transition: .5s all;
     text-align: center;
     /* width: 90%;
     height: 80%; */
-    padding:2%;
+    padding:8%;
     overflow: hidden;
     top: 15%;
     right: 8%;
@@ -107,9 +226,6 @@ transition: .5s all;
 } */
 
 .navbar-brand {
-  position: relative;
-  right:16em;
-  transform:scale(.8);
  
   font-family: 'IBM Plex Mono', monospace;
    
@@ -167,30 +283,11 @@ transition: .5s all;
   text-shadow: 5px 5px black;
 }
 
-#githubButton {
-  color:white;
-  position: absolute;
-  text-align: center;
-  top:73%;
-  /* right:40%;  */
-  z-index: 999;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-  width:30%;
-  font-size:30px;
-  background-color:orangered;
-  font-family: 'IBM Plex Mono', monospace;
-  box-shadow: 10px 10px 5px black;
-}
 
-ul {
-  position: relative;
-  left:10em;
+.navbar-nav {
+  margin-left:auto;
+  text-align:right;
 }
-
-  
 
   /* .flip-card-inner {
     transition: transform 0.8s;
@@ -225,7 +322,7 @@ ul {
   } */
 
 
-  @media (min-width: 259px) and (max-width: 800px) {
+  @media (min-width: 259px) and (max-width: 767px) {
     /*          border-color:lightcyan;
         border-style: solid;
          */
@@ -256,37 +353,10 @@ ul {
           width:500%;
         }
 
-        #cardContainer {
-          width:400%;
-        }
-        .card {
-          left:25%;
-        }
-        
-
-        .navbar {
-          /* max-height:300px; */
-          height:20%;
-        }
-    
-
-        .navbar-brand {
-          position: relative;
-          bottom:8em;
-          right:30em;
-          transform:scale(.3);
-        }
-        .navbar-brand h5 {
-          position: relative;
-          text-align: center;
-          font-size:30px;
-        }
-
         #mainName {
           font-size:150px;
-          right:150%;
-          transform:scale(.5);
-          width:100%;
+          left:130%;
+          width:240%;
         }
         #description {
           font-size:60px;
@@ -295,9 +365,8 @@ ul {
         }
         #githubButton {
           font-size:70px;
-          right:150%;
-          transform:scale(.5);
-          width:100%;
+          left:150%;
+          width:200%;
         }
 
         #headerImage {
@@ -305,17 +374,31 @@ ul {
           height:100%;
         }
           /* margin-bottom:20%; */
-         
+        .navbar-brand img{
+          max-height:5rem;
+          width:auto;
+        }
+        .navbar{
+          height:5rem;
+        }
+
+        .diamond{
+          width:40vh;
+          height:40vh;
+          border-radius:40px;
+          font-size:1.6vh;
+        }
+
+        .diamond .me {
+            width:10vh;
+            border-radius:70%;
+            margin:4%;
+            margin-top:0%;
+            max-width:250px;
+        }
          
     
     }
-
-
-.navbar {
-    margin-bottom: 5%;
-    width:100%;
-}
-
 
 
  #bigContainer {
@@ -323,11 +406,11 @@ ul {
      display:inline-block;
      padding:30%;
      margin:0 auto;
-
  }
 
 .card {
-margin: 10%;
+  margin:auto;
+  text-align:center;
 /* text-align:center;
 display:inline-block; */
 
@@ -347,21 +430,31 @@ background: var(--main-color);
 } */
 
 #cardContainer {
-  position:absolute;
   /* left:25%; */
-  left:25%;
-  margin:0 auto;
+  width:700px;
+  max-width:100%;
+  margin:auto;
   text-align:center;
   /* display:inline-block; */
+}
 
+.row{
+  padding-bottom:2vh;
+}
+
+.diamond-row{
+  padding-bottom:10;
 }
 
 footer {
   position:absolute;
-  right:15em;
   background-color:white;
   width:100%;
+}
 
+footer .container-fluid{
+  max-width:1280px;
+  margin:auto;
 }
 
 

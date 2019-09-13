@@ -1,23 +1,99 @@
+.clearnav{
+    height:10rem;
+}
+
 .navbar {
-    max-height:200px;
-  }
+  height:10rem;
+  max-height:200px;
+  text-align:right;
+}
 
-.navbar img {
-    max-width:80%; 
-  }
+.container-nav{
+  width:1280px;
+  max-width:100%;
+  margin:0 auto;
+}
 
-.navbar-brand {
-    position: relative;
-    right:16em;
-    transform:scale(.8);
-   
+.navbar-brand{
+  text-align:center;
+}
+
+.navbar-brand img{
+  max-height:7rem;
+  width:auto;
+}
+
+.container{
+  max-width:1280px !important;
+  max-width:100%;
+  margin:0 auto;
+}
+
+.row{
+    max-width:100%;
+}
+
+.navbar-brand{
+  font-family: 'IBM Plex Mono', monospace;
+  text-align:center;
+}
+
+.navbar-nav {
+  margin-left:auto;
+  text-align:right;
+}
+
+.title {
+    font-size:3rem;
     font-family: 'IBM Plex Mono', monospace;
-     
+    color: #000000;
+    text-align: center;
+    padding-top:2rem;
+    padding-bottom: 1rem;
+}
+
+.flip-card p{
+    font-size:1rem;
+    font-family: 'IBM Plex Mono', monospace;
+    text-align:left;
+    padding-bottom:0rem;
+}
+
+.flip-card .title{
+    font-size:1.5rem;
+    font-family: 'IBM Plex Mono', monospace;
+    text-align:center;
+    color: #FFFFFF;
+    font-weight:700;
+    padding-top: 0.5rem;
+    padding-bottom:0.5rem;
+    margin-bottom:0;
+}
+
+.flip-card .subtitle{
+    font-size:0.5rem;
+    font-family: 'IBM Plex Mono', monospace;
+    text-align: left;
+    color: #FFFFFF;
+    padding-bottom:0.5rem;
+    margin-bottom:0;
+}
+
+@media (min-width: 259px) and (max-width: 767px) {
+        .navbar-brand img{
+          max-height:5rem;
+          width:auto;
+        }
+        .navbar{
+          height:5rem;
+        }
+        .clearnav{
+            height:5rem;
+        }
 }
 
 ul {
-    position: relative;
-    left:10em;
+    padding:1em;
 }
 
 .top {
@@ -36,8 +112,12 @@ ul {
     left:4%;
 }
   
-  .flip-card {
+.flip-card {
     background-color: transparent;
+    width:400px;
+    height:400px;
+    max-width:100%;
+    min-width:200px;
     /* height: 435px; */
     /*   min-height:600px;  */
     /* min-height: 300px; */
@@ -45,7 +125,7 @@ ul {
     /* border: 2px solid #f1f1f1;
     border-radius: 6px; */
     /* padding: 5%; */
-    perspective: 1000px;
+    perspective: 600px;
     /* display:block; */
     /* position: relative; */
 }
@@ -53,6 +133,7 @@ ul {
 .flip-card img {
     height: 100%;
     width: 100%;
+    object-fit:cover;
     
 }
 
@@ -64,9 +145,12 @@ ul {
     position: relative;
     /* /* width:100%; */
     height: 100%;
-    text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+}
+
+.flip-card-content{
+    padding:1em;
 }
 
 
@@ -89,34 +173,34 @@ ul {
     /* border-radius: 2%; */
 }
 
-
-/* Style the front side (fallback if image is missing) */
-
-
-
-
-/* Style the back side */
-
-.flip-card-back {
+.flip-card-back{
     overflow: scroll;
     height: 100%;
     background-color: dodgerblue;
     color: white;
     transform: rotateX(180deg);
-    /* border: 2% solid #f1f1f1; */
-    /* border-radius: 2%; */
 }
 
+.col{
+    max-width:400px !important;
+    padding-bottom:1rem;
+}
 
-/* .btn-success {
-  background-color: limegreen
-  border-color:limegreen;
-} */
+/* Style the front side (fallback if image is missing) */
+
 
 .flip-card-front .hover {
     font-weight: bold;
     font-style: italic;
 }
 
+footer {
+  position:absolute;
+  background-color:white;
+  width:100%;
+}
 
-
+footer .container-fluid{
+  max-width:1280px;
+  margin:auto;
+}

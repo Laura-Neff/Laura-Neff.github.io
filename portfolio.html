@@ -2,152 +2,175 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=.3">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
+    <title>Portfolio | Laura Neff</title>
+    
     <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
     
 </head>
 <body>
     <!-- Navbar -->
-    <div class="row">
-        <div class="col">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                        <div class="container" id="navContain" style="max-width: 30%;">
-                            <!-- <div data-aos="zoom-in-up"> -->
-                            <div class="navbar-brand">
-                                <!-- <h3 style="width:30%;display:inline-block;">Laura Neff</h3> -->
-                                <!-- <img src="images/logo2.png" class="img-fluid"> -->
-                                <img src="images/logo2.png" id="logo">
-                                <h5>Laura Neff<h5>
-                                </div>
-                             
-                              <!-- </div> -->
-                                <a class="navbar-brand js-scroll-trigger" href="#page-top"><i class="fas fa-home"></i></a>
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                        <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <!-- <h3 class="navbar-brand">Laura Neff</h3> -->
-                          <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                              <a class="nav-link js-scroll-trigger" href="index.html">About<span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link js-scroll-trigger" href="portfolio.html">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link js-scroll-trigger" href="contact.html">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link js-scroll-trigger" target="_blank" href="./NeffLauraCV.pdf" download="NeffLauraCV.pdf">C.V.</a>
-                            </li>
-                          </ul>
-                        <!-- </div> -->
-            </div>
-    </div>
-    </nav>
-    </div>
-    </div>
+      <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+                <!-- <div data-aos="zoom-in-up"> -->
+          <div class="container-nav bg-light">
+            
+            <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbar" class="navbar-collapse collapse">
+              <div class="navbar-brand">
+                    <!-- <h3 style="width:30%;display:inline-block;">Laura Neff</h3> -->
+                    <!-- <img src="images/logo2.png" class="img-fluid"> -->
+                    <img src="images/logo2.png" id="logo">
+                    <h5>Laura Neff</h5>
+              </div>
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">About</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" target="_blank" href="./NeffLauraCV.pdf" download="NeffLauraCV.pdf">C.V.</a>
+                </li>
+            </ul>
+            
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+      <div class="clearnav"></div>
+      <h1 class="title">Recent Projects</h1>
+      <div class="container">
+            <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="flip-card top pic">
+                                <div class="flip-card-inner">
+                                  <div class="flip-card-front">
 
-            <div class="row">
-                    <!-- <div class="col"> -->
-                            <div class="flip-card top pic">
-                                    <div class="flip-card-inner">
-                                      <div class="flip-card-front">
-
-                            <img src="images/In or Out.png">
-                    </div>
+                                    <img src="images/In or Out.png">
+                        </div>
 
                     <div class="flip-card-back">
-                            <h1>In or Out</h1> 
-                            <p>Web app that allows the user to find nearby restaurants and related recipes based on their input. The user will be able to decide whether they would want to dine out or cook at home. The user is able to see the ingredients and steps to cook the desired food, or view the information and locations of the near restaurants which have the type of desired cuisine.</p> 
-                            <p>Languages/Tools: Javascript, HTML, CSS, Bootstrap, jQuery, AOS Animation Js library.<p>
-                            <p>APIs used: Yelp, Google Maps, Edamam's recipe.</p>
-                            <p>Responsibilities:  Anything to do with the recipes retrieved from the Edamam's recipe API -- the CSS for making the flip cards for the recipes, integrating the Edamam API for recipes by using AJAX calls and JQuery to dynamically create elements, using javascript to manipulate the obtained recipes.</p>
-
-                          </div>
+                        <div class="flip-card-content">
+                            <p class="title is-5">In or Out</p> 
+                            <p class="description">Web app that allows the user to find nearby restaurants and related recipes based on their input.</p>
+                            <p><strong>Languages/Tools:</strong> Javascript, HTML, CSS, Bootstrap, jQuery, AOS Animation Js library.</p>
+                            <p><strong>APIs used:</strong> Yelp, Google Maps, Edamam's recipe.</p>
                         </div>
-                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
 
-                        <!-- </div> -->
-                    <!-- <div class="col"> -->
-
-                            <div class="flip-card top pic">
-                                    <div class="flip-card-inner">
-                                      <div class="flip-card-front">
+                <div class="flip-card top pic">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
 
                             <img src="images/Bamazon.png">
-                </div>
-                <div class="flip-card-back">
-                        <h1>Bamazon</h1> 
-                        <p>A Node application that models Amazon. User is given a list of items they can choose to buy, along with an id for the item, the stock quantity, its price, and the department it belongs to. These items are printed to the terminal from a database made in MySQL holding these items. Once a user decides on an item to buy, if the item is in stock, the stock quantity of the item will be updated in the database and the cost of the user's purchase will be calculated and printed to the terminal. If the item is not in stock, the user will get an invalid input message.</p>
-                        <p>Languages/Tools: SQL, Node.js, Javascript</p>
+                        </div>
+                        <div class="flip-card-back">
+                                <div class="flip-card-content">
+                                    <p class="title is-5">Bamazon</p> 
+                                    <p class="description">A Node application that models Amazon, where users can purchase items by department, relying on a SQL database to validate and record transactions.</p>
+                                    <p><strong>Languages/Tools:</strong> SQL, Node.js, Javascript</p>
+                                </div>
                       </div>
                     </div>
                   </div>
-
-
-
-              
-                      <img class="top pic" src="images/Tamagotchi.png">
-                   
-                       
-                       
-                      
+            </div>
+            <div class="col">
+                <div class="flip-card">
+                        <img class="top pic" src="images/Tamagotchi.png">
                     </div>
-
-                    <div class="row">
+            </div>
+             
                       
-                    <!-- <div class="col"> -->
-                            <img class="pic" src="images/BudgetThis.png" id="logo">
-                               
-                        <!-- </div> -->
-                     <!-- <div class="col"> -->
-                            <img class="pic" src="images/Giftastic.png" id="logo">
-                                   
-                        <!-- </div> -->
-
-                    <!-- <div class="col"> -->
-                            <img class="pic" src="images/TrainScheduler.png" id="logo">
-                        </div>      
-                            <!-- </div> -->
-                        <!-- <div class="col"> -->
-
-                        <div class="row">
-                            <img class="pic" src="images/liri-node-app.png" id="logo">
-                                               
-                            <!-- </div> -->
-                        <!-- <div class="col"> -->
-                            <img class="pic" src="images/MemeGame.png" id="logo">
-                                                       
-                            <!-- </div> -->
-                            <!-- <div class="col"> -->
-                                    <img class="pic" src="images/PsychicGame.png" id="logo">
-                                                               
+                        <div class="col">
+                            <div class="flip-card">
+                                <img class="pic" src="images/BudgetThis.png" id="logo">
+                            </div>
                         </div>
-                        <div class="row">
-                            <!-- <div class="col"> -->
-                                            <img class="last pic" src="images/CentralLimit.png" id="logo">
-                                                                       
-                                    <!-- </div> -->
-                                </div>
-            
+                         <div class="col">
+                            <div class="flip-card">
+                                <img class="pic" src="images/Giftastic.png" id="logo">
+                            </div>
+                        </div>
+                            <!-- </div> -->
+
+                        <div class="col">
+                            <div class="flip-card">
+                                <img class="pic" src="images/TrainScheduler.png" id="logo">
+                            </div>      
+                         </div>
+
+                     
+
+                        <div class="col">
+                            <div class="flip-card">
+                                <img class="pic" src="images/liri-node-app.png" id="logo">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="flip-card">
+                                <img class="pic" src="images/MemeGame.png" id="logo">
+                            </div>
+                        </div>                   
+                        <div class="col">
+                            <div class="flip-card">
+                                <img class="pic" src="images/PsychicGame.png" id="logo">
+                            </div>
+                        </div>
+                                                           
+                     
+
+                        <div class="col">
+                            <div class="flip-card">
+                                    <img class="last pic" src="images/CentralLimit.png" id="logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- container !-->
+        
+
+<footer class="page-footer font-small blue pt-4">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-md-left">
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+      
+              <!-- Content -->
+              <h5 class="text-uppercase"> Developed by Laura Neff</h5>
+              <p>Copyright 2019 ©</p>
+              <p>Check out my <a href="https://www.linkedin.com/in/laura-neff-79b025158/" target="_blank">Linkedin</a></p>
+      
             </div>
 
-    
+        </div>
+    </div>
+</footer>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
     AOS.init();
-
-
-
-  </script>
+</script>
 
 </body>
 </html>

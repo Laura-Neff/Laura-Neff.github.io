@@ -2,58 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About</title>
+    <title>Laura Neff</title>
+    
+    
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
     
 </head>
 <body>
     <!-- Navbar -->
-    <div class="row">
-        <div class="col">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                        <div class="container" id="navContain" style="max-width: 30%;">
-                            <!-- <div data-aos="zoom-in-up"> -->
-                            <div class="navbar-brand">
-                                <!-- <h3 style="width:30%;display:inline-block;">Laura Neff</h3> -->
-                                <!-- <img src="images/logo2.png" class="img-fluid"> -->
-                                <img src="images/logo2.png" id="logo">
-                                <h5>Laura Neff<h5>
-                                </div>
-                             
-                              <!-- </div> -->
-                                <a class="navbar-brand js-scroll-trigger" href="#page-top"><i class="fas fa-home"></i></a>
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                        <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <!-- <h3 class="navbar-brand">Laura Neff</h3> -->
-                          <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                              <a class="nav-link js-scroll-trigger" href="index.html">About<span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link js-scroll-trigger" href="portfolio.html">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link js-scroll-trigger" href="contact.html">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link js-scroll-trigger" target="_blank" href="./NeffLauraCV.pdf" download="NeffLauraCV.pdf">C.V.</a>
-                            </li>
-                          </ul>
-                        <!-- </div> -->
-            </div>
-    </div>
-    </nav>
-    </div>
-    </div>
+    <!-- Static navbar -->
+      <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+                <!-- <div data-aos="zoom-in-up"> -->
+          <div class="container-nav bg-light">
+            
+            <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbar" class="navbar-collapse collapse">
+              <div class="navbar-brand">
+                    <!-- <h3 style="width:30%;display:inline-block;">Laura Neff</h3> -->
+                    <!-- <img src="images/logo2.png" class="img-fluid"> -->
+                    <img src="images/logo2.png" id="logo">
+                    <h5>Laura Neff</h5>
+              </div>
+            <ul class="nav navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" target="_blank" href="./NeffLauraCV.pdf" download="NeffLauraCV.pdf">C.V.</a>
+                </li>
+            </ul>
+            
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
 
     
 
@@ -64,67 +60,57 @@
     <!-- <img src="images/computer.jpg" class="img-fluid" id="headerImage" alt="Responsive image"> -->
     <!-- <img src="https://media0.giphy.com/media/ko7twHhomhk8E/giphy.gif" class="img-fluid" id="headerImage" alt="Responsive image"> -->
     
-    <div>
-        <img src="images/computer.jpg" class="img-fluid" id="headerImage" alt="Responsive image">
-        <h1 id="mainName">Laura Neff</h1>
-        <p id="description">Full Stack Developer</p>
-        <a class="btn btn-danger" target="_blank" id="githubButton" href="https://github.com/Laura-Neff" role="button">See my Github</a>
-    </div>
+    <section class="hero">
+        <h1 class="title" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="100">Laura Neff</h1>
+        <p class="subtitle" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200">Full Stack Developer</p>
+        <a class="btn btn-danger githubButton" target="_blank" href="https://github.com/Laura-Neff" role="button">See my Github</a>
+    </section>
     <!-- </div> -->
   </div>
 </div>
 
 
- <div class="row">
-       <div class="col">
+ <div class="diamond-container">
 
-<div class="container" id= "bigContainer">
-<div class="flip-card">
+        <div class="flip-card">
 
-<div class="flip-card-inner">
+        <div class="flip-card-inner">
 
-      <div class="flip-card-front">
-        
-        <div class="diamond">
-        <div class="diamond-content">
-              <div class="col" id="mainImgDiv">
-                  <img class="me" src="images/My Picture.jpg">
-              </div>
-
-              <div class="col" id='diamondText'>
-                  Full-stack developer with a solid foundation in JavaScript, Node.js, React.js, R, CSS, and creating databases in MySQL and Firebase. I have expertise in Java from creating programs for students struggling in math and CS as I worked in the Emory Math and Computer Science Center.
-              <div class="container" id= "textContainer">
-              <!-- <p class="firstPara">Full-stack developer with a solid foundation in JavaScript, Node.js, React.js, R, CSS, and creating databases in MySQL and Firebase. I have expertise in Java from creating programs for students struggling in math and CS as I worked in the Emory Math and Computer Science Center.</p> -->
-              <!-- <p class="secondPara">I believe that a big impasse in the technological world is the confusion people have over new algorithms and inventions. This can result in legal issues with patents and copyright as well as the discouragement of people entering STEM fields. I am committed to changing this through writing about technology for the Her Campus chapter of Emory University.</p> -->
-              
-              
-            </div>
-          </div>
-        </div>
-          
-        </div>
-      </div>   
-       
-
-          </div>
-
-          <!-- <div class="flip-card-back">
-            
-              <div class="diamond">
-                <div class="diamond-content">
-                <p>I believe that a big impasse in the technological world is the confusion people have over new algorithms and inventions. This can result in legal issues with patents and copyright as well as the discouragement of people entering STEM fields. I am committed to changing this through writing about technology for the Her Campus chapter of Emory University.</p> 
+              <div class="flip-card-front">
                 
-            </div> -->
+                <div class="diamond">
+                <div class="diamond-content">
+                  <div class="row">
+                      <div class="col" id='diamondText'>
+                        <img class="me" src="images/My Picture.jpg">
+                          Full-stack developer with a solid foundation in JavaScript, Node.js, React.js, R, CSS, and creating databases in MySQL and Firebase. I have expertise in Java from creating programs for students struggling in math and CS as I worked in the Emory Math and Computer Science Center.
+                      
+                  </div>
+                </div>
+              </div>
+                  
+                </div>
+              </div>   
+               
 
-      </div>
+                  </div>
 
-</div>
+                  <!-- <div class="flip-card-back">
+                    
+                      <div class="diamond">
+                        <div class="diamond-content">
+                        <p>I believe that a big impasse in the technological world is the confusion people have over new algorithms and inventions. This can result in legal issues with patents and copyright as well as the discouragement of people entering STEM fields. I am committed to changing this through writing about technology for the Her Campus chapter of Emory University.</p> 
+                        
+                    </div> -->
 
-</div>
+
+        </div> 
+
+        </div> <!--container !-->
 
 
 
-    </div>
+    </div> <!--row!-->
 </div>
 </div>
 
@@ -150,7 +136,7 @@
     <div class="row">
         <div class="col">
       <div data-aos="fade-up">
-      <div class="card" id= "quote" style="width: 50%;">
+      <div class="card" id= "quote">
         <div class="card-body" id="languages">
           <h5 class="card-text">Knowedge in several languages and technologies</h5>
           <!-- <p class="card-text">Java | Javascript | Node.js | React.js | Express | MySQL | JQuery | CSS3 |  | R | Python | Firebase | MongoDB | Handelbars.js | HTML5 | Git | Heroku | Chai.js | Mocha.js | Moment.js | Bootstrap | Sequelize</p> -->
@@ -166,7 +152,7 @@
 <div class="row">
   <div class="col">
 <div data-aos="fade-up">
-<div class="card" id= "quote" style="width: 50%;">
+<div class="card" id= "quote">
   <div class="card-body">
     <p class="card-text">Inventor with 3 patents</p>
     <a href="https://patents.google.com/patent/US20160371991A1/en?q=laura&inventor=neff&assignee=Laura+J.+Neff" target="_blank" id="patent" class="btn btn-primary">See my patent involving CS on healthcare</a>
@@ -180,14 +166,16 @@
 <div class="row">
   <div class="col">
 <div data-aos="fade-up">
-<div class="card" id= "quote" style="width: 50%;">
+<div class="card" id= "quote">
   <div class="card-body">
     <p class="card-text">Published author with several articles on AI and data protection.</p>
-    <div class="col">
-    <a href="https://www.hercampus.com/school/oxford-emory/artificial-intelligence-potentially-our-most-valuable-medicine" id="AI" target="_blank" class="btn btn-primary">Read my article on AI's effect on medicine</a>
+    <div class="row">
+      <div class="col">
+      <a href="https://www.hercampus.com/school/oxford-emory/artificial-intelligence-potentially-our-most-valuable-medicine" id="AI" target="_blank" class="btn btn-primary">Read my article on AI's effect on medicine</a>
+      </div>
+      <div class="col">
+      <a href="https://emorywheel.com/in-honor-of-opportunity-increase-nasa-budget/" target="_blank" id="Nasa" class="btn btn-primary">Read my NASA article on the Emory Wheel</a>
     </div>
-    <div class="col">
-    <a href="https://emorywheel.com/in-honor-of-opportunity-increase-nasa-budget/" target="_blank" id="Nasa" class="btn btn-primary">Read my NASA article on the Emory Wheel</a>
   </div>
   </div>
 </div>
@@ -198,7 +186,7 @@
 <div class="row">
   <div class="col">
 <div data-aos="fade-up">
-<div class="card" id= "quote" style="width: 50%;">
+<div class="card" id= "quote">
   <div class="card-body">
     <p class="card-text">Certified in Full Stack development from Columbia University and business from Goizueta Business School</p>
   </div>
@@ -210,7 +198,7 @@
 <div class="row">
   <div class="col">
 <div data-aos="fade-up">
-<div class="card" id= "quote" style="width: 50%;">
+<div class="card" id= "quote" >
   <div class="card-body">
     <p class="card-text">Volunteer math tutor for several schools</p>
   </div>
@@ -222,7 +210,7 @@
 <div class="row">
   <div class="col">
 <!-- <div data-aos="fade-up"> -->
-<div class="card" id= "quote" style="width: 50%;">
+<div class="card" id= "quote" data-aos="fade-up">
   <div class="card-body">
     <p class="card-text">Speaker of 3 languages</p>
     <p>French (fluent), Spanish (working), English (native)</p>
@@ -247,35 +235,33 @@
 </div>
 
 </div> -->
+</div>
+ <footer class="page-footer font-small blue pt-4">
 
-
-    <div class="row">
-            <div class="col">
-          <footer class="page-footer font-small blue pt-4">
-
-                <!-- Footer Links -->
-                <div class="container-fluid text-center text-md-left">
-              
-                  <!-- Grid row -->
-                  <div class="row">
-              
-                    <!-- Grid column -->
-                    <div class="col-md-6 mt-md-0 mt-3">
-              
-                      <!-- Content -->
-                      <h5 class="text-uppercase"> Developed by Laura Neff</h5>
-                      <p>Copyright 2019 ©</p>
-                      <p>Check out my <a href="https://www.linkedin.com/in/laura-neff-79b025158/" target="_blank">Linkedin</a></p>
-              
-                    </div>
-
-                </div>
+        <!-- Footer Links -->
+        <div class="container-fluid text-md-left">
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+      
+              <!-- Content -->
+              <h5 class="text-uppercase"> Developed by Laura Neff</h5>
+              <p>Copyright 2019 ©</p>
+              <p>Check out my <a href="https://www.linkedin.com/in/laura-neff-79b025158/" target="_blank">Linkedin</a></p>
+      
             </div>
-        </footer>
+
         </div>
     </div>
-    
+</footer>
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script>
     AOS.init();
 
@@ -286,7 +272,7 @@
 
 for(var i = 0; i < codingLanguages.length; i++){
 
-    var buttonBaby = $("<button data-topic=" + codingLanguages[i] + ">" + codingLanguages[i] + "</button>");
+    var buttonBaby = $("<button type='button' class='btn btn-outline-primary btn-small btn-rounded' data-topic=" + codingLanguages[i] + ">" + codingLanguages[i] + "</button>");
     buttonBaby.appendTo("#languages");
 
 }
@@ -295,7 +281,7 @@ $(".diamond-content").hover(
   function() {
       $(this).css({'transform' : 'rotate('+ 225 +'deg)'});
       // $(this).css({'transition': '.4s all'});
-      $(`#diamondText`).css({'top' : '100px'});
+      $(`#diamondText`).css({'top' : '5vh'});
     $(`#diamondText`).html("I believe that a big impasse in the technological world is the confusion people have over new algorithms and inventions. This can result in legal issues with patents and copyright as well as the discouragement of people entering STEM fields. I am committed to changing this through writing about technology for the Her Campus chapter of Emory University.");
     // $(`#diamondText`).css({'position' : 'relative'});
     // $(`#diamondText`).css({'top' : '100px'});
@@ -304,11 +290,11 @@ $(".diamond-content").hover(
   }, function() {
 
     // $(this).find( "img:last" ).remove();
-    $(`#diamondText`).css({'top' : '50px'});
+    $(`#diamondText`).css({'top' : '0px'});
     $(`<img class="me" src="images/My Picture.jpg">`).appendTo("#mainImgDiv");
     $(this).css({'transform' : 'rotate('+ 315 +'deg)'});
     // $(this).css({'transition': '.4s all'});
-    $(`#diamondText`).html("Full-stack developer with a solid foundation in JavaScript, Node.js, React.js, R, CSS, and creating databases in MySQL and Firebase. I have expertise in Java from creating programs for students struggling in math and CS as I worked in the Emory Math and Computer Science Center.")
+    $(`#diamondText`).html('<img class="me" src="images/My Picture.jpg"> Full-stack developer with a solid foundation in JavaScript, Node.js, React.js, R, CSS, and creating databases in MySQL and Firebase. I have expertise in Java from creating programs for students struggling in math and CS as I worked in the Emory Math and Computer Science Center.')
     // $(`#diamondText`).css({'bottom' : '30px'});
     $(".diamond").css({'transform' : 'rotate('+ -315 +'deg)'});
   }

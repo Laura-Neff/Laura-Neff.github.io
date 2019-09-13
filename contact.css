@@ -1,47 +1,68 @@
-.navbar {
-    max-height:200px;
-  }
-
-.navbar img {
-    max-width:80%; 
-  }
-
-.navbar-brand {
-    position: relative;
-    right:16em;
-    transform:scale(.8);
-   
-    font-family: 'IBM Plex Mono', monospace;
-     
-}
-
-ul {
-    position: relative;
-    left:10em;
-}
-
-/* body {
-    background-image: url("https://media0.giphy.com/media/ko7twHhomhk8E/giphy.gif")
-
-} */
-
-
-body { 
+.container { 
     background:  url("images/contact.gif");
     background-size: cover;
   }
-/*  */
 
+ul {
+    padding:1em;
+}
+
+.clearnav{
+    height:10rem;
+}
+
+.navbar {
+  height:10rem;
+  max-height:200px;
+  text-align:right;
+}
+
+.container-nav{
+  width:1280px;
+  max-width:100%;
+  margin:0 auto;
+}
+
+.navbar-brand{
+  text-align:center;
+}
+
+.navbar-brand img{
+  max-height:7rem;
+  width:auto;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width:100% !important;
+    min-height: 70vh;
+}
+
+.row{
+    max-width:100%;
+}
+
+.navbar-brand{
+  font-family: 'IBM Plex Mono', monospace;
+  text-align:center;
+}
+
+.navbar-nav {
+  margin-left:auto;
+  text-align:right;
+}
 
 .jumbotron {
-    margin-top:20%;
-    margin-left:12%;
-    margin-right:12%;
     display: block;
+    overflow: auto !important;
+    width:960px;
+    max-width:90%;
     text-align: center;
     font-family: 'Luckiest Guy', cursive;
-    
-
+    margin:auto;
+    min-height: 800px;
+    padding-bottom:0px !important;
 }
 
 
@@ -71,6 +92,19 @@ body {
 
 p .btn {
     font-family: 'Luckiest Guy', cursive;
+}
+
+@media (min-width: 259px) and (max-width: 767px) {
+        .navbar-brand img{
+          max-height:5rem;
+          width:auto;
+        }
+        .navbar{
+          height:5rem;
+        }
+        .clearnav{
+            height:5rem;
+        }
 }
 
 
